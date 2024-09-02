@@ -23,7 +23,9 @@
     },
     "files": [
         "index.js",
-        "index.d.ts"
+        "index.d.ts",
+        "animals.js",
+        "adjectives.js"
     ],
     "keywords": [
         "generate",
