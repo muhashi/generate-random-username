@@ -37,7 +37,7 @@ test('ensures username length respects maxLength even with digits', t => {
     t.regex(username, new RegExp(`^([a-z]+-[a-z]+-\\d{${digits}})$`));
 });
 
-test.only('ensures username respects maxLength even with separator', t => {
+test('ensures username respects maxLength even with separator', t => {
     const maxLength = 10;
     const separator = '_';
 

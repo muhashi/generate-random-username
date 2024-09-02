@@ -1,7 +1,7 @@
 {
     "name": "generate-random-username",
     "version": "0.0.0",
-    "description": "My awesome module",
+    "description": "A tiny module to generate a random username from a list of adjectives and animals.",
     "license": "CC0-1.0",
     "repository": "muhashi/generate-random-username",
     "author": {
@@ -26,8 +26,17 @@
         "index.d.ts"
     ],
     "keywords": [
-        "unicorn",
-        "fun"
+        "generate",
+        "username",
+        "random",
+        "unique",
+        "generator",
+        "identity",
+        "auth",
+        "name",
+        "id",
+        "handle",
+        "randomize"
     ],
     "devDependencies": {
         "ava": "^6.1.3",
