@@ -1,10 +1,10 @@
 # generate-random-username
 
-> A tiny module to generate a random username from a list of adjectives and animals.
+> A tiny package to generate a random username from a list of adjectives and animals.
+
+This package will generate close to 200k different unique usernames, even more with digits appended. The wordlist has been manually reviewed to ensure the words are appropriate for use in a username.
 
 Options exist for a custom separator between the username, limiting username to a maximum length, adding random digits, and capitalizing the words in the username.
-
-This module will generate close to 200k different unique usernames, without any digits appended. The wordlist has been manually looked at to ensure the words are appropriate for use in a username.
 
 ## Install
 
