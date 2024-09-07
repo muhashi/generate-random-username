@@ -287,7 +287,6 @@ export default [
   "feasible",
   "feisty",
   "felicitous",
-  "fertile",
   "fervent",
   "fervid",
   "festive",
