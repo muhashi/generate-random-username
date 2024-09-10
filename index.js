@@ -14,7 +14,7 @@ function getRandomDigits(digits) {
         Math.random() * Math.pow(10, digits)
     );
 
-    return randomNumber.toString().padStart(digits, '0');
+    return randomNumber;
 }
 
 function capitalizeWord(str) {

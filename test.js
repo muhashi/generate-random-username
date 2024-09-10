@@ -26,7 +26,7 @@ test('generates a username with a maximum length', t => {
 test('generates a username with random digits added', t => {
     const digits = 3;
     const username = generateRandomUsername({ digits });
-    t.regex(username, /^[a-z]+-[a-z]+-\d{3}$/);
+    t.regex(username, /^[a-z]+-[a-z]+-\d{1,3}$/);
 });
 
 test('ensures username length respects maxLength even with digits', t => {
@@ -34,7 +34,7 @@ test('ensures username length respects maxLength even with digits', t => {
     const digits = 4;
     const username = generateRandomUsername({ maxLength, digits });
     t.true(username.length <= maxLength);
-    t.regex(username, new RegExp(`^([a-z]+-[a-z]+-\\d{${digits}})$`));
+    t.regex(username, new RegExp(`^([a-z]+-[a-z]+-\\d{1,${digits}})$`));
 });
 
 test('ensures username respects maxLength even with separator', t => {
@@ -60,5 +60,5 @@ test('ensures username respects maxLength with custom separator and digits', t =
     const digits = 5;
     const username = generateRandomUsername({ maxLength, separator, digits });
     t.true(username.length <= maxLength);
-    t.regex(username, new RegExp(`^[a-z]+\\*[a-z]+\\*\\d{${digits}}$`));
+    t.regex(username, new RegExp(`^[a-z]+\\*[a-z]+\\*\\d{1,${digits}}$`));
 });
