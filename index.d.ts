@@ -14,14 +14,6 @@ export type Options = {
     readonly digits?: number;
 
     /**
-    The maximum length of a username to generate.
-    For lengths under 10, it may not always find a username under that length, and will fallback to returning a longer username.
-
-    @default null
-    */
-    readonly maxLength?: number;
-
-    /**
     Whether to capitalize each word used in the username.
 
     @default false
@@ -48,9 +40,6 @@ generateRandomUsername({ capitalize: true });
 
 generateRandomUsername({ separator: '_' });
 //=> 'safe_llama'
-
-generateRandomUsername({ maxLength: 10 });
-//=> 'clear-eel'
 
 generateRandomUsername({ digits: 3 });
 //=> 'unaffected-cat-184'

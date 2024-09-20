@@ -4,7 +4,7 @@
 
 This package will generate close to 200k different unique usernames, even more with digits appended. The wordlist has been manually reviewed to ensure the words are appropriate for use in a username.
 
-Options exist for a custom separator between the username, limiting username to a maximum length, adding random digits, and capitalizing the words in the username.
+Options exist for a custom separator between the username, adding random digits, and capitalizing the words in the username.
 
 ## Install
 
@@ -25,9 +25,6 @@ generateRandomUsername({ capitalize: true });
 
 generateRandomUsername({ separator: '_' });
 //=> 'safe_llama'
-
-generateRandomUsername({ maxLength: 10 });
-//=> 'clear-eel'
 
 generateRandomUsername({ digits: 3, capitalize: true });
 //=> 'Unaffected-Cat-184'
@@ -61,11 +58,3 @@ Type: `number`\
 Default: `0`
 
 Number of random digits to append to end of username.
-
-##### maxLength
-
-Type: `number`\
-Default: `null`
-
-The maximum length of a username to generate.
-For lengths under 10, it may not always find a username under that length, and will fallback to returning a longer username.
