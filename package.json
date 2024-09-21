@@ -1,6 +1,6 @@
 {
     "name": "generate-random-username",
-    "version": "1.1.0",
+    "version": "2.0.0",
     "description": "A tiny module to generate a random username from a list of adjectives and animals.",
     "license": "CC0-1.0",
     "repository": "muhashi/generate-random-username",
