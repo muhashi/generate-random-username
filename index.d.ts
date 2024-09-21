@@ -24,7 +24,7 @@ export type Options = {
 /**
 Generate a random username from a list of adjectives and animals.
 
-Options exist for a custom separator between the username, limiting username to a maximum length, adding random digits, and capitalizing the words in the username.
+Options exist for a custom separator between the username, adding random digits, and capitalizing the words in the username.
 @param options - options to customize the username
 @returns a randomly generated username
 
