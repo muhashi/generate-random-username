@@ -16,7 +16,7 @@
     },
     "sideEffects": false,
     "engines": {
-        "node": ">=18"
+        "node": ">=16"
     },
     "scripts": {
         "test": "ava && tsc index.d.ts"
