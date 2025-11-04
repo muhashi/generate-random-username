@@ -1,5 +1,7 @@
-import adjectives from './adjectives.json' with { type: 'json' };
-import animals from './animals.json' with { type: 'json' };
+'use strict';
+
+var adjectives = require('./adjectives.json');
+var animals = require('./animals.json');
 
 function getRandomFromArray(arr) {
     const randomIndex = Math.floor(Math.random() * arr.length);
@@ -18,7 +20,7 @@ function capitalizeWord(str) {
     return str.charAt(0).toUpperCase() + str.slice(1);
 }
 
-export default function generateRandomUsername({ separator = '-', digits = 0, capitalize = false } = {}) {
+function generateRandomUsername({ separator = '-', digits = 0, capitalize = false } = {}) {
     if (typeof separator !== 'string') {
         separator = '';
     }
@@ -40,3 +42,5 @@ export default function generateRandomUsername({ separator = '-', digits = 0, ca
 
     return username;
 }
+
+module.exports = generateRandomUsername;

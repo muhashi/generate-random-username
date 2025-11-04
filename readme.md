@@ -30,6 +30,14 @@ generateRandomUsername({ digits: 3, capitalize: true });
 //=> 'Unaffected-Cat-184'
 ```
 
+### CommonJS
+
+You can require this module as a CommonJS module.
+
+```js
+const generateRandomUsername = require('generate-random-username');
+```
+
 ## API
 
 ### generateRandomUsername(options?)
