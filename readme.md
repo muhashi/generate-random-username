@@ -1,4 +1,4 @@
-# generate-random-username
+# generate-random-username ![](https://img.shields.io/npm/dm/generate-random-username)
 
 > A tiny package to generate a random username from a list of adjectives and animals.
 
