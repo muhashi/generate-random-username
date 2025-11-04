@@ -26,9 +26,10 @@
     },
     "files": [
         "index.js",
+        "index.cjs",
         "index.d.ts",
-        "animals.js",
-        "adjectives.js"
+        "animals.json",
+        "adjectives.json"
     ],
     "keywords": [
         "generate",
