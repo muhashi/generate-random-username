@@ -65,4 +65,4 @@ Separator to use between words in the username.
 Type: `number`\
 Default: `0`
 
-Number of random digits to append to end of username.
+Number of random digits to append to end of username. Must be between 0 and 15 inclusive.
