@@ -48,6 +48,6 @@
         "@rollup/plugin-json": "^6.1.0",
         "ava": "^7.0.0",
         "rollup": "^4.52.5",
-        "typescript": "^5.5.4"
+        "typescript": "^6.0.2"
     }
 }
