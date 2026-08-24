@@ -29,6 +29,10 @@ function generateRandomUsername({ separator = '-', digits = 0, capitalize = fals
         digits = 0;
     }
 
+    if (digits < 0 || digits > 15) {
+        throw new Error('Number of digits must be between 0 and 15');
+    }
+
     let first = getRandomFromArray(adjectives);
     let second = getRandomFromArray(animals);
 
